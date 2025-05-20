@@ -27,7 +27,6 @@ This is the official backend for **Nation Eye**, a reporting system built with L
 
 ## 🛠 Installation
 
-```bash
 git clone https://github.com/bit-tech-sa/nation_eye_backend.git
 cd nation_eye_backend
 cp .env.example .env
@@ -36,6 +35,21 @@ php artisan key:generate
 php artisan migrate --seed
 php artisan storage:link
 php artisan serve
+
+## API Endpoints
+Method	 Endpoint	     Description	            Auth
+POST	/send-otp	    Send OTP code	             ❌
+POST	/verify-otp	    Verify OTP & get token	     ❌
+GET	    /report-types	Get all report types	     ❌
+POST	/reports	    Submit a new report	         ✅
+GET	    /reports	    List authenticated reports	 ✅
+GET	    /report/{id}	Get report by ID	         ✅
+
+## 🧪 Testing via Postman
+A full Postman collection is available here:
+🔗 Postman Collection Link
+
+
 
 ### Premium Partners
 
