@@ -45,10 +45,6 @@ POST	/reports	    Submit a new report	         ✅
 GET	    /reports	    List authenticated reports	 ✅
 GET	    /report/{id}	Get report by ID	         ✅
 
-## 🧪 Testing via Postman
-A full Postman collection is available here:
-🔗 Postman Collection Link
-
 
 
 ### Premium Partners
